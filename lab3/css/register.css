@@ -1,0 +1,80 @@
+body{
+    background-color: rgba(126, 140, 141, 0.15);
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+nav{
+    background-color: white;
+    height: 60px;
+    text-align: right;
+}
+
+nav a{
+    margin: 50px 30px 30px;
+    padding-top: 20px;
+    color: #252d48;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: #6691ad;
+}
+
+h1{
+    font-size: xx-large;
+    color: #252d48;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+section{
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(12,19,24,0.63);
+    background-color: white;
+    padding: 15px;
+}
+
+p{
+    margin-top: 25px;
+    line-height: normal;
+}
+
+input,select{
+    margin-top: 5px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+textarea{
+    width: 60%;
+    height: 100px;
+    background-color: rgba(192, 213, 215, 0.53);
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+input[type="button"],input[type="submit"]{
+    background-color: #fafffd;
+}
+
+input[type="button"]:hover,input[type="submit"]:hover{
+    color: white;
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+
+input[type="submit"]:disabled{
+    color: #252d48;
+    background-color: rgba(126, 140, 141, 0.47);
+    cursor: inherit;
+}
+
+input[type="submit"]{
+    height: 40px;
+    width: 100px;
+    margin-bottom: 10px;
+}

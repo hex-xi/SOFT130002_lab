@@ -1,0 +1,115 @@
+body{
+    background-color: rgba(126, 140, 141, 0.15);
+}
+
+nav ul{
+    margin-top: 30px;
+    margin-left: 20px;
+    list-style-type: none;
+}
+
+li{
+    padding-right: 30px;
+    display: block;
+    text-align: left;
+    float: left;
+}
+
+li a:link,li a:visited ,span{
+    font-weight:bold;
+    color: rgba(15, 19, 29, 0.95);
+    padding: 4px;
+    text-decoration:none;
+}
+
+span{
+    float: right;
+    width: 10%;
+    margin-top: 25px;
+}
+
+nav{
+    margin: -10px;
+    background-color: white;
+    height: 60px;
+}
+
+nav img{
+    margin-left: 10%;
+    margin-top: 0;
+    float: left;
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+}
+
+nav .hrefs{
+    float: left;
+}
+
+li a:hover{
+    color: #6691ad;
+}
+
+.clean{
+    clear: both;
+}
+
+.part{
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(12,19,24,0.63);
+    background-color: white;
+    padding: 15px;
+}
+
+.midpart{
+    float: left;
+    margin-left: -70px;
+    width: 70%;
+}
+
+.mainbox{
+    text-align: left;
+}
+
+.right-aside{
+    float: right;
+    margin-right: 100px;
+    width: 6%;
+
+}
+
+
+
+small{
+    color: #7e8c8d;
+    font-size: small;
+}
+
+h1{
+    font-size: large;
+    font-weight: bold;
+    color: rgba(24, 34, 55, 0.88);
+    margin-bottom: 5px;
+}
+
+p,pre{
+    line-height: normal;
+    font-size: 14px;
+    text-overflow: ellipsis;
+}
+
+article{
+    padding: 10px;
+}
+
+aside li{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.down{
+    text-align: center;
+    color: #252d48;
+}
