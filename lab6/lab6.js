@@ -165,37 +165,42 @@ function twoSum(nums, target) {
     打印最长的包含不同字符串的子字符串长度。
 要求：
     ①使用Map。
-    ②例如：输入"abbbbb",输出1，输入"bbbbb",输出2；
+    ②例如：输入"abbbbb",输出2，输入"bbbbb",输出1；
     ③只能显式使用一次循环。
     ④使用console.log打印即可。
     ⑤str为字符串。
 */
 function lengthOfLongestSubstring(str) {
-    let chars = str.split("");
     let map = new Map();
-    let char=chars[0];
-    let count = 1;
-    let childS=char;
-    let maxCount = 1;
-    for(let i=1;i<chars.length;i++){
-        if(chars[i]==char){
-            count++;
-            childS+=char;
-        }else{
-            if(count>maxCount){
-                maxCount = count;
+    let nowS,nowChar;
+    let maxCount = 0;
+    let nowCount=0;
+    for(let i=0,j=1;i<str.length;){
+        nowS = str.substring(i,j);
+        nowChar = str.substring(j-1,j);
+        if(map.has(nowChar)){//重置
+            i++;
+            j=i+1;
+            nowCount=0;
+            map.clear();
+        }else {
+            map.set(str.substring(j-1,j),1);
+            nowCount++;
+            if(maxCount<nowCount){
+                maxCount =nowCount;
             }
-            map.set(count,childS);
-            count=1;
-            char=chars[i];
-            childS =char;
+            map.set(nowS,nowCount);
+            if(j<str.length){
+                j++;
+            }else {//重置
+                i++;
+                j=i+1;
+                nowCount=0;
+                map.clear();
+            }
         }
     }
-    if(count>maxCount){
-        maxCount = count;
-    }
-    map.set(count,childS);
-    console.log(map.get(maxCount));
+    console.log(maxCount);
 }
 
 /*
